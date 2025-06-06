@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Website Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛡️ Phishing Website Detector</h1>
+            <p>Protect yourself from malicious websites</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <div class="input-group">
+                    <input type="url" id="urlInput" placeholder="Enter URL to check (e.g., https://example.com)" />
+                    <button id="checkBtn">Check URL</button>
+                </div>
+            </div>
+
+            <div id="loading" class="loading hidden">
+                <div class="spinner"></div>
+                <p>Analyzing URL...</p>
+            </div>
+
+            <div id="results" class="results hidden">
+                <div class="result-header">
+                    <h2 id="resultTitle">Analysis Results</h2>
+                    <div id="riskBadge" class="risk-badge"></div>
+                </div>
+                
+                <div class="result-details">
+                    <div class="detail-item">
+                        <strong>URL:</strong>
+                        <span id="analyzedUrl"></span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>Risk Score:</strong>
+                        <span id="riskScore"></span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>Status:</strong>
+                        <span id="phishingStatus"></span>
+                    </div>
+                </div>
+
+                <div id="warnings" class="warnings">
+                    <h3>⚠️ Security Warnings</h3>
+                    <ul id="warningsList"></ul>
+                </div>
+
+                <div id="recommendations" class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                    <ul id="recommendationsList"></ul>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h2>How to Identify Phishing Websites</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <h3>🔍 Check the URL</h3>
+                        <p>Look for misspellings, extra characters, or suspicious domains</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>🔒 Verify SSL Certificate</h3>
+                        <p>Ensure the website has a valid HTTPS certificate</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>📧 Be Cautious of Links</h3>
+                        <p>Don't click on suspicious links in emails or messages</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>🏦 Contact Directly</h3>
+                        <p>When in doubt, contact the organization directly</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
