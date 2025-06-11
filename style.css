@@ -244,6 +244,7 @@ main {
     color: #495057;
 }
 
+
 @media (max-width: 768px) {
     .input-group {
         flex-direction: column;
