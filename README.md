@@ -41,6 +41,7 @@ A web application that uses machine learning and rule-based analysis to detect p
 
    - Place your CSV file (with URLs and labels) in the project directory.
    - Update the filename in `ml_model.py` if needed.
+   - Re-train the model using `ml_model.py` using `python ml_model.py`.
 
 ### Running the App
 
